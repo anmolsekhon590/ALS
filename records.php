@@ -30,7 +30,8 @@
 <body>
 
     <nav>
-        <a href="insert-records.php">Add Record</a>    
+        <a href="insert-records.php">Add Record</a>
+        <a href="logout.php">Logout</a>
     </nav>
     <table style="border: 2px solid black; border-collapse: collapse;">
         <tr style="border: 2px solid black; border-collapse: collapse;">
