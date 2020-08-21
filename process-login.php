@@ -27,7 +27,8 @@
             $row = $stmt->fetch();
             
             if ($row['password'] == $password) {
-                echo "login successful";
+                // all credentials are correct
+                header("./insert-records.php");
             } else {
                 echo "invalid password";
             }
