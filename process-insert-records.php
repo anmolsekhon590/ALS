@@ -22,14 +22,19 @@
       '$houseVisited','$positiveHouses','$containerChecked','$positiveContainers', '$groupMeetings')");
     $stmt->execute();
 
-    echo "Date: " . $date;
-    echo "Team No: ". $teamNumber;
-    echo "Name of Worker" . $nameOfWorker;
-    echo "Area: " . $areaVisited ;
-    echo "No. of Houses Visited: " . $houseVisited;
-    echo "Positive Houses: " . $positiveHouses;
-    echo "Container Checked: " . $containerChecked;
-    echo "Positive Containers: " . $positiveContainers;
-    echo "No. of Group Meetings: " . $groupMeetings;
+    echo "Record Added";
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="insert-records.php">Add Record</a>
+    </nav>
+</body>
+</html>
