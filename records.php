@@ -8,8 +8,9 @@
 
     $pdo = new PDO($dsn,$dbusername, $dbpassword);
     $stmt = $pdo->prepare("SELECT * FROM `records` WHERE `date` = '$date' ");
-    $row = $stmt->fetch();
     $stmt->execute();
+    
+    
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +21,10 @@
     <title>View Record</title>
 </head>
 <body>
+
+    <nav>
+        <a href="insert-records.php">Add Record</a>    
+    </nav>
     <table style="border: 2px solid black; border-collapse: collapse;">
         <tr style="border: 2px solid black; border-collapse: collapse;">
             <th>Team No.</th>
@@ -32,9 +37,21 @@
             <th>Group Meetings</th>
         </tr>
 
-        <tr>
-            <td><?php $row['teamNumber']?></td>
-        </tr>
+        <?php 
+            while ($row = $stmt->fetch()) {
+            ?><tr>
+                <td><?php echo $row['teamNumber']?></td>
+                <td><?php echo $row['nameOfWorker']?></td>
+                <td><?php echo $row['areaVisited']?></td>
+                <td><?php echo $row['houseVisited']?></td>
+                <td><?php echo $row['positiveHouses']?></td>
+                <td><?php echo $row['containerChecked']?></td>
+                <td><?php echo $row['positiveContainers']?></td>
+                <td><?php echo $row['groupMeetings']?></td>
+            </tr> <?php
+            }
+        ?>
+        
     </table>
 </body>
 </html>

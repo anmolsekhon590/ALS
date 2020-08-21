@@ -10,6 +10,10 @@
     <title>Insert Records</title>
 </head>
 <body>
+    <nav>
+        <a href="./select-records.php">View Records</a>
+    </nav>
+
     <h1>Insert Records</h1>
     <form action="process-insert-records.php" method="POST">
         
