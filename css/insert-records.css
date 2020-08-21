@@ -1,22 +1,29 @@
+.field {
+    width: 100%;
+    display: grid;
+    grid-auto-columns: auto auto;
+    margin: 20px 0px;
+    background-color: blueviolet;
+}
+
 h1 {
     text-align: center;
 }
 
 form {
-    background-color: grey;
-    width: 50%;
+    width: 60%;
 }
 
 .container-form {
-    height: 400px;
     width: 100%;
     background-color: coral;
     display: flex;
     justify-content: center;
 }
 
-.message {
+.btn-container {
     width: 100%;
+    background-color: brown;
 }
 
 .btn-submit {
@@ -24,21 +31,20 @@ form {
     height: 35px;
     background-color: #91d18b;
     border-radius: 4px;
-}
-
-.field {
-    width: 100%;
-    display: grid;
-    grid-auto-columns: auto auto;
-    margin: 20px 0px;
+    margin-bottom: 20px;
 }
 
 .textfield {
     height: 35px;
 }
 
-@media (max-width: 768px) {
+header {
+    width: 100%;
+}
+
+@media (max-width: 625px) {
     form {
         width: 80%;
+        /* background-color: yellow; */
     }
 }

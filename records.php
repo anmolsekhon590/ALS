@@ -26,15 +26,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Record</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/records.css">
 </head>
 <body>
 
     <nav>
         <a href="insert-records.php">Add Record</a>
+        <a href="select-records.php">View Record</a>
         <a href="logout.php">Logout</a>
     </nav>
-    <table style="border: 2px solid black; border-collapse: collapse;">
-        <tr style="border: 2px solid black; border-collapse: collapse;">
+    <table>
+        <tr>
             <th>Team No.</th>
             <th>Name of Worker</th>
             <th>Name of Area</th>
