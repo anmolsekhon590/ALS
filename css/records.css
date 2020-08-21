@@ -3,3 +3,15 @@ table, tr, td, th {
     border-collapse: collapse;
     text-align: center;
 }
+
+header {
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    margin :0;
+    padding: 20px 0px;
+    width: 100%;
+}

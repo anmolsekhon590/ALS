@@ -36,47 +36,47 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
             <div class="field">
                 <label>Date: </label>
-                <input class="textfield" type="date" name="date">
+                <input class="textfield" type="date" name="date" required>
             </div>
 
             <div class="field">
                 <label>Team number: </label>
-                <input class="textfield" type="number" name="teamNumber">
+                <input class="textfield" type="number" name="teamNumber" required>
             </div>
 
             <div class="field">
-                <label>Name of worker: </label>
-                <input class="textfield" type="text" name="nameOfWorker">
+                <label>Name of worker(s): </label>
+                <textarea class="textfield" type="text" name="nameOfWorker" rows="2" required> </textarea>
             </div>
 
             <div class="field">
                 <label>Area Visited: </label>
-                <input class="textfield" type="text" name="areaVisited">
+                <textarea class="area-field" type="text" name="areaVisited" rows="4" maxlength="255" required></textarea>
             </div>
 
             <div class="field">
                 <label>Total Houses Visited: </label>
-                <input class="textfield" type="number" name="houseVisited">
+                <input class="textfield" type="number" name="houseVisited" required>
             </div>
 
             <div class="field">
                 <label>Positive Houses: </label>
-                <input class="textfield" type="number" name="positiveHouses">
+                <input class="textfield" type="number" name="positiveHouses" required>
             </div>
 
             <div class="field">
                 <label>Total Containers Checked: </label>
-                <input class="textfield" type="number" name="containerChecked">
+                <input class="textfield" type="number" name="containerChecked" required>
             </div>
 
             <div class="field">
                 <label>Positive Containers: </label>
-                <input class="textfield" type="number" name="positiveContainers">
+                <input class="textfield" type="number" name="positiveContainers" required>
             </div>
 
             <div class="field">
                 <label>Group Meetings: </label>
-                <input class="textfield" type="number" name="groupMeetings">
+                <input class="textfield" type="number" name="groupMeetings" required>
             </div>
 
 
