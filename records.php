@@ -1,4 +1,11 @@
-<?php 
+<?php
+    session_start();
+ 
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: ./index.php");
+        exit;
+    }
+
     $date = $_GET['date'];
 
     $dsn = "mysql:host=localhost;dbname=als_db;charset=utf8mb4";

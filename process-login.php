@@ -28,7 +28,12 @@
             
             if ($row['password'] == $password) {
                 // all credentials are correct
-                header("Location: ./insert-records.php");
+                
+                session_start();
+                $_SESSION["loggedin"] = true;
+                $_SESSION["username"] = $username;
+
+                header("Location: ./session.php");
             } else {
                 echo "invalid password";
             }

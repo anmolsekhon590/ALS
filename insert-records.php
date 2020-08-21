@@ -1,5 +1,10 @@
 <?php
-    
+    session_start();
+ 
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: ./index.php");
+        exit;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +17,7 @@
 <body>
     <nav>
         <a href="./select-records.php">View Records</a>
+        <a href="logout.php">Logout</a>
     </nav>
 
     <h1>Insert Records</h1>
