@@ -1,5 +1,12 @@
 <?php
+    session_start();
+ 
+    if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true){
+        header("location: ./insert-records.php");
+        exit;
+    }
 
+    $loginmessage = $_GET['message'];
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +27,8 @@
         <input type="password" name="login-password">
         
         <br><br>
+
+        <span><?php  ?></span>
         
         <input type="submit">
     </form>
