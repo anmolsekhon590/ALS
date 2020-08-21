@@ -10,7 +10,9 @@
     <title>Insert Records</title>
 </head>
 <body>
+    <h1>Insert Records</h1>
     <form action="process-insert-records.php" method="POST">
+        <label>Team number  </label>
         <input type="number" name="">
 
         <br><br>

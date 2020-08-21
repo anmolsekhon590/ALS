@@ -28,7 +28,7 @@
             
             if ($row['password'] == $password) {
                 // all credentials are correct
-                header("./insert-records.php");
+                header("Location: ./insert-records.php");
             } else {
                 echo "invalid password";
             }
