@@ -11,7 +11,7 @@
     
     // check if username is empty or not
     if (empty(trim($username))) {
-        echo "please enter a username";
+        header("Location: ./index.php?message=please_enter_a_username");
     } else {
         // only select all usernames to check
         $stmt = $pdo->prepare("SELECT `username` FROM `userlogin` WHERE `username` = '$username' ");
@@ -35,12 +35,12 @@
 
                 header("Location: ./session.php");
             } else {
-                echo "invalid password";
+                header("Location: ./index.php?message=Invalid_Password");
             }
             
         } else {
             // then display error message
-            echo "invalid username";
+            header("Location: ./index.php?message=Invalid_Username");
         }
                 
     }
