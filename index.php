@@ -42,7 +42,7 @@ $loginmessage = $_GET['message'];
             
             <br><br>
 
-            <div>
+            <div class="btn-container">
                 <input class="btn-submit" type="submit">
             </div>
         </form>

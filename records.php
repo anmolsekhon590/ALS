@@ -64,5 +64,7 @@
         ?>
         
     </table>
+
+    <button type="button" onclick="print()">Print</button>
 </body>
 </html>

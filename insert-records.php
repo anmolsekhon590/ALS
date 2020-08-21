@@ -19,13 +19,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </head>
 
 <body>
-    <nav>
-        <a href="./select-records.php">View Records</a>
-        <a href="logout.php">Logout</a>
-    </nav>
     <header>
         <h1>Insert Records</h1>
     </header>
+    <nav class="nav-bar">
+        <div>
+            <a href="./select-records.php">View Records</a>
+        </div>
+        <div class="spacer"></div>
+        <div style="margin-right: 20px;">
+            <a href="logout.php">Logout</a>
+        </div>
+    </nav>
     <div class="container-form">
         <form action="process-insert-records.php" method="POST">
 
