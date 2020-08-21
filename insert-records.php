@@ -41,6 +41,10 @@
         <input type="number" name="containerChecked">
         
         <br><br>
+        <label>Positive Containers: </label>
+        <input type="number" name="positiveContainers">
+
+        <br><br>
         <label>Group Meetings: </label>
         <input type="number" name="groupMeetings">
 
