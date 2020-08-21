@@ -23,7 +23,6 @@
     $stmt->execute();
 
     echo "Date: " . $date;
-    echo "";
     echo "Team No: ". $teamNumber;
     echo "Name of Worker" . $nameOfWorker;
     echo "Area: " . $areaVisited ;
