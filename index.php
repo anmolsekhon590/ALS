@@ -1,36 +1,52 @@
 <?php
-    session_start();
- 
-    if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true){
-        header("location: ./insert-records.php");
-        exit;
-    }
+session_start();
 
-    $loginmessage = $_GET['message'];
+if (isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true) {
+    header("location: ./insert-records.php");
+    exit;
+}
+
+$loginmessage = $_GET['message'];
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
-<body>
-    <form action="process-login.php" method="POST">
-        <label>Username: </label>
-        <input type="text" name="login-username" autocomplete="off">
-        
-        <br><br>
-        
-        <label>Password: </label>
-        <input type="password" name="login-password">
-        
-        <br><br>
 
-        <span><?php  ?></span>
-        
-        <input type="submit">
-    </form>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div class="container-form">
+        <form action="process-login.php" method="POST">
+            <div class="field">
+                <label>Username: </label>
+                <input class="textfield" type="text" name="login-username" autocomplete="off">
+            </div>
+
+            <div class="field">
+                <label>Password: </label>
+                <input class="textfield" type="password" name="login-password">
+            </div>
+
+            <br><br>
+            
+            <span class="message"><?php echo $loginmessage ?></span>
+            
+            <br><br>
+
+            <div>
+                <input class="btn-submit" type="submit">
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
