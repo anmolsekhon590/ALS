@@ -2,10 +2,10 @@
     $username = $_POST["login-username"];
     $password = $_POST["login-password"];
 
-    $dsn = "mysql:host=us-cdbr-east-03.cleardb.com;dbname=als_db;charset=utf8mb4";
+    $dsn = "mysql:host=us-cdbr-east-03.cleardb.com;dbname=heroku_e8c82b8b1ac4477;charset=utf8mb4";
 
-    $dbusername = "bc56ac4fed54dd";
-    $dbpassword = "cafe0be2";
+    $dbusername = "bb5f9565b76639";
+    $dbpassword = "e847d074";
 
     $pdo = new PDO($dsn,$dbusername, $dbpassword);
     
