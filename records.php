@@ -8,10 +8,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 $date = $_GET['date'];
 
-$dsn = "mysql:host=localhost;dbname=als_db;charset=utf8mb4";
+$dsn = "mysql:host=us-cdbr-east-03.cleardb.com;dbname=als_db;charset=utf8mb4";
 
-$dbusername = "root";
-$dbpassword = "";
+    $dbusername = "bc56ac4fed54dd";
+    $dbpassword = "cafe0be2";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 $stmt = $pdo->prepare("SELECT * FROM `records` WHERE `date` = '$date' ");
