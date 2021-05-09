@@ -37,7 +37,7 @@ $loginmessage = $_GET['message'];
             </div>
 
             <br><br>
-            <span style="color: grey">tester username: "demo" password: "tester"</span>
+            <span style="color: grey">username: "demo" password: "tester"</span>
             <span class="message"><?php echo $loginmessage ?></span>
             
             <br><br>
